@@ -1,5 +1,5 @@
 
-setwd("~/Documents/R stuff/Empire-DKP")
+#setwd("~/Documents/R stuff/Empire-DKP")
 
 library(dplyr)
 library(xml2)
