@@ -12,6 +12,7 @@ ui <- fluidPage(id="page",
                 tags$style(type = "text/css", "div#page.container-fluid::before {display: none; !important;}"),
                 tags$style(type = "text/css", "div#page.container-fluid {margin: 0; padding: 0; !important;}"),
                 tags$style(type = "text/css", "div.row {margin: 0px 10px 0px 10px; !important;}"),
+                tags$style(tupe = "text/css", "#DataTables_Table_0_filter {float: left;}"),
   column(6, 
          titlePanel(
     div(
@@ -35,7 +36,7 @@ ui <- fluidPage(id="page",
   style={"margin-top: 0px;"}
   ),
   column(6,
-         div(img(src="Ragnaros.jpg", height="980px", width="640px", style={"margin-top:0px;"}) ) 
+         div(img(src="Ragnaros_original2.jpg", height="640px", width="740px", style={"margin-top:0px; position: fixed;"}) ) 
          )
 )
 
@@ -43,8 +44,8 @@ server <- function(input,output) {
   
   output$dtbl <- renderDataTable(
     options = list(
-      paging = TRUE,
-      pageLength = 20,
+      paging = FALSE,
+      #pageLength = 20,
       searching = TRUE
       ),
     rownames = FALSE,
