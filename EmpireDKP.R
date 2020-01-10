@@ -7,13 +7,13 @@ df_dkp <- as.data.frame(read_csv("dkp.csv"))
 
 ui <- fluidPage(id="page",
                 
-                tags$style(type = "text/css", "h2 {margin: 0; !important;}"),
-                tags$style(type = "text/css", "div.col-sm-6 {margin: 0; padding-left: 0px; padding-right: 0px; !important;}"),
-                tags$style(type = "text/css", "div#page.container-fluid::before {display: none; !important;}"),
-                tags$style(type = "text/css", "div#page.container-fluid {margin: 0; padding: 0; !important;}"),
-                tags$style(type = "text/css", "div.row {margin: 0px 10px 0px 10px; !important;}"),
-                tags$style(tupe = "text/css", "#DataTables_Table_0_filter {float: left;}"),
-  column(6, 
+                tags$style(type = "text/css", "h2 {margin: 0; !important;}",
+                "div#col1 {margin: 0; border: 4px; border-style: solid; border-color: black; padding-left: 0px; padding-right: 0px; !important;}",
+                "div#page.container-fluid::before {display: none; !important;}",
+                "div#page.container-fluid {margin: 0; padding: 0; !important;}",
+                "div.row {margin: 0px 10px 0px 10px; !important;}",
+                "#DataTables_Table_0_filter {float: left;}"),
+  column(6, id = "col1",
          titlePanel(
     div(
       h6("DKP status for members of", align="center",
@@ -36,7 +36,7 @@ ui <- fluidPage(id="page",
   style={"margin-top: 0px;"}
   ),
   column(6,
-         div(img(src="Ragnaros_original2.jpg", height="640px", width="740px", style={"margin-top:0px; position: fixed;"}) ) 
+         div(img(src="Ragnaros_original2.jpg", height="640px", width="750px", style={"margin-top:0px; margin-left: -15px; position: fixed;"}) ) 
          )
 )
 
