@@ -10,7 +10,7 @@ df_dkp <- as.data.frame(read_csv("dkp.csv"))
 ui <- fluidPage(id="page",
                 
   tags$style(type = "text/css", "h2 {margin: 0; !important;}",
-  "div#col1 {margin: 0; border: 4px; border-style: solid; border-color: black; padding-left: 0px; padding-right: 0px; !important;}",
+  "div#col1 {margin: 0; min-height: 1000px; border: 4px; border-top-style: solid; border-right-style:solid; border-color: black; padding-left: 0px; padding-right: 0px; !important;}",
   "div#page.container-fluid::before {display: none; !important;}",
   "div#page.container-fluid {margin: 0; padding: 0; !important;}",
   "div.row {margin: 0px 10px 0px 10px; !important;}",
@@ -39,7 +39,7 @@ ui <- fluidPage(id="page",
     style={"margin-top: 0px;"}
   ),
   
-  column(6, #right column w bgimage
+  column(6, id="col2",#right column w bgimage
     div(
       img(src="Ragnaros_original2.jpg", height="100%", width="50%", style={"margin-top:0px; margin-left: -15px; position: fixed;"}) 
        ) 
