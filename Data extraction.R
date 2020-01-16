@@ -1,5 +1,5 @@
 
-setwd("~/Documents/R stuff/Empire-DKP")
+setwd("~/Documents/R stuff/empire-dkp")
 
 library(dplyr)
 library(xml2)
@@ -7,7 +7,7 @@ library(rvest)
 library(readr)
 
 # DKP table
-rel_nodes <- read_html("dkp.html", encoding = "UTF-8") %>% 
+rel_nodes <- read_html("dkp.html") %>% 
   html_nodes("div#DKP.tab") %>% 
   html_nodes("div.divTableBody") %>% 
   html_nodes("div.divTableRow")
