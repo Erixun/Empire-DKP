@@ -19,15 +19,15 @@ ui <- fluidPage(id="page",
   column(6, id = "col1", #left column w table
     titlePanel(
       div(
-        h6("DKP status for members of", align="center",
+        h6(strong("DKP status for members of"), align="center",
            img(src="Alliance_icon.svg", height=88, width=80, style={'margin-left: 20px;float:left;'}),
            img(src="Alliance_icon.svg", height=88, width=80, style={'margin-right: 20px;float:right;'}), 
-           style={'margin:0px;float:center; padding-bottom:0px;padding-top:5px;'}), 
-          h1("Empire", align="center", 
-           style={'font-family:copperplate; font-size:70px; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: black;
-      -webkit-font-smoothing: antialiased; color:darkred; margin-top:-10px; margin-bottom:-10px; padding-top:0px;'}), 
+           style={'margin:0px;float:center; padding-bottom:0px;padding-top:6px;'}), 
+          h1("EMPIRE", align="center", 
+           style={'font-size:55px; font-weight: bold; -webkit-text-stroke-width: 3px; -webkit-text-stroke-color: black;
+      -webkit-font-smoothing: antialiased; color:darkred; margin-top:-1px; margin-bottom:-7px; padding-top:0px;'}), 
           em(h6("Bloodfang EU", align="center", 
-                style={'margin-top:0px; margin-bottom: 5px;'})), #align="center",
+                style={'margin-top:1px; margin-bottom: 5px; padding-top: 3px;'})), #align="center",
           style={'height: 95px; width: auto; margin-top: 10px; margin-left: 10px; margin-right: 10px; padding: 0; background-color:lightblue;'}
           ),
       windowTitle = "Empire DKP"
